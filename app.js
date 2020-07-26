@@ -3,10 +3,13 @@
     //this automatic binding is being done by AngularJS bw View and ViewModel
 
     //binding of the app and the controller
-angular.module('myFirstapp', [])
-
-.controller('MyFirstController', function(){
-
+//controller is viewmodel or presentation logic
+angular.module('myFirstApp', [])
+.controller('MyFirstController', function ($scope){
+    $scope.name = "Harram";
+    $scope.sayHello = function(){
+        return "Hello coursera";
+    };
 });
 
 })();
